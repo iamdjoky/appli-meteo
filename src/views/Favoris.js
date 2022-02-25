@@ -37,7 +37,7 @@ class Favoris extends Component {
 
               {this.state.listOfWeatherFavoris ? this.state.listOfWeatherFavoris.map((item) => {
                   return <div className="temperature_ville">
-                    <p>{item.weather.main.temp}°F</p>
+                    <p>{item.weather.main.temp}°C</p>
                     <img src={`./assets/${item.weather.weather[0].icon}.png`} alt='meteo'/> 
                     </div>
               }) : null }
